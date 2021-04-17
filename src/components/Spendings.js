@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 import {COLORS, SIZES} from '../constants/theme';
 import {createIonicons} from '../utils';
@@ -12,9 +12,13 @@ export const Spendings = () => {
         <Text style={styles.amountSum}>$ 137,000</Text>
       </View>
       <View style={[styles.row, styles.month]}>
-        {createIonicons('chevron-back', 20, '#8C93A1')}
+        <TouchableOpacity onPress={() => console.log('prev')}>
+          {createIonicons('chevron-back', 20, '#8C93A1')}
+        </TouchableOpacity>
         <Text style={styles.monthText}>January</Text>
-        {createIonicons('chevron-forward', 20, '#8C93A1')}
+        <TouchableOpacity onPress={() => console.log('next')}>
+          {createIonicons('chevron-forward', 20, '#8C93A1')}
+        </TouchableOpacity>
       </View>
     </View>
   );

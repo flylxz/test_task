@@ -9,28 +9,14 @@ const data = [
     title: 're:Store',
     group: 'Electronics',
     discount: '15%',
-    image: '',
+    image: require('../../../assets/images/restore.png'),
   },
   {
     id: 2,
     title: 'Meat In Heaven',
     group: 'Food',
     discount: '25%',
-    image: '',
-  },
-  {
-    id: 3,
-    title: '2 Fingers',
-    group: 'Drink',
-    discount: '50%',
-    image: '',
-  },
-  {
-    id: 4,
-    title: 'FireBlast',
-    group: 'Fireworks',
-    discount: '10%',
-    image: '',
+    image: require('../../../assets/images/burger.png'),
   },
 ];
 

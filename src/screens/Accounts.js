@@ -1,7 +1,14 @@
 import React from 'react';
 import {ScrollView, View, Text, StyleSheet, SafeAreaView} from 'react-native';
 
-import {StoreCarousel, Spendings, CardCarousel, Barclays} from '../components';
+import {
+  StoreCarousel,
+  Spendings,
+  CardCarousel,
+  Barclays,
+  TotalSpend,
+  AddBank,
+} from '../components';
 import {SIZES} from '../constants/theme';
 
 export const Accounts = () => {
@@ -9,6 +16,10 @@ export const Accounts = () => {
     <SafeAreaView style={styles.wrapper}>
       <ScrollView>
         <View style={styles.container}>
+          <View style={styles.header}>
+            <TotalSpend />
+            <AddBank />
+          </View>
           <Text style={styles.title}>My accounts</Text>
           <StoreCarousel />
           <Spendings />
@@ -29,10 +40,14 @@ const styles = StyleSheet.create({
   container: {
     marginLeft: SIZES.base * 2,
     alignContent: 'center',
+    paddingTop: SIZES.padding * 2,
   },
-  row: {
+  header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingRight: SIZES.padding,
+    marginBottom: 50,
   },
   title: {
     // width: '90%',

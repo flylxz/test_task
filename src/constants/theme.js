@@ -1,7 +1,7 @@
 export const COLORS = {
   black: '#0C0C0E',
   white: '#FFFFFF',
-  // gray arrows
+  // gray
   manatee: '#8C93A1',
   // inactive icons
   ghost: '#C9CED7',
