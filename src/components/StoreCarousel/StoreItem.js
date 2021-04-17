@@ -8,9 +8,7 @@ import {createFeatherIcon} from '../../utils';
 export const StoreItem = ({item}) => {
   return (
     <View style={styles.card}>
-      {/* <View style={styles.imageContainer}> */}
       <Image style={styles.cardImage} source={item.image} />
-      {/* </View> */}
       <View style={styles.titleContainer}>
         <View>
           <Text style={styles.title}>{item.title}</Text>
@@ -50,18 +48,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
-  imageContainer: {
-    // height: 160,
-    // width: 285,
-  },
   cardImage: {
     borderRadius: SIZES.radius,
     resizeMode: 'contain',
     height: 160,
     width: 285,
-    // width: '100%',
-    // height: '100%',
-    // backgroundColor: 'green',
   },
   titleContainer: {
     width: '80%',
